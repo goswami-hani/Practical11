@@ -1,0 +1,99 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+}
+
+.navbar {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.page {
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.page h2 {
+  color: #1e293b;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.page p {
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.page a {
+  color: #0284c7;
+}
+
+.footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .page {
+    padding: 25px 15px;
+  }
+}
